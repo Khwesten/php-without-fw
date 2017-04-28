@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="container">
+    <form id="form-register" class="form-horizontal well" style="margin-top: 50px">
+        <div id="alert" style="display: none"></div>
+        <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email<sup>*</sup></label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div id="message-email"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmEmail" class="col-sm-2 control-label">Confirmar email<sup>*</sup></label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="confirmEmail" name="confirmEmail" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password" class="col-sm-2 control-label">Password<sup>*</sup></label>
+            <div class="col-sm-7">
+                <input type="password" class="form-control" id="password" name="password" required>
+                <small>*Uma password forte deve ter no mínimo 8 dígitos, sendo 3 letras (1 maiúscula), 2
+                    números e 2 caracteres especiais
+                </small>
+            </div>
+
+            <div class="col-sm-3 text-center">
+                <p style="margin: 0">A sua password é segura?</p>
+                <div class="col-md-3 padding-no">
+                    <small>Fraca</small>
+                </div>
+                <div class="col-md-6 padding-no">
+                    <div style="width: 90px; background-color: lightgoldenrodyellow; height: 10px; margin: 5px auto 0 auto">
+                        <div id="password-score" style="width: 0; height: 10px; background-color: red"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 padding-no">
+                    <small>Forte</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword" class="col-sm-2 control-label">Confirmar password<sup>*</sup></label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName" class="col-sm-2 control-label">Nome<sup>*</sup></label>
+            <div class="col-sm-5">
+                <input id="name" class="form-control" name="name" type="text" placeholder="Nome" required/>
+            </div>
+            <div class="col-sm-5">
+                <input id="lastName" class="form-control" name="lastName" type="text" placeholder="Apelido" required/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="street" class="col-sm-2 control-label">Rua / Nº</label>
+            <div class="col-sm-10">
+                <input id="street" class="form-control" name="street" type="text"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="zipCode" class="col-sm-2 control-label">Código Postal / Localidade</label>
+            <div class="col-sm-5">
+                <input id="zipCode" class="form-control" name="zipCode" type="text" placeholder="Ex. 9999-999"/>
+            </div>
+            <div class="col-sm-5">
+                <input id="place" class="form-control" name="place" type="text"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="country" class="col-sm-2 control-label">País</label>
+            <div class="col-sm-10">
+                <select id="country" name="country" class="form-control">
+                    <option value="BRA">Brasil</option>
+                    <option value="ESP">Espanha</option>
+                    <option value="IRL">Irlanada</option>
+                    <option value="POR">Portugual</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="nif" class="col-sm-2 control-label">NIF</label>
+            <div class="col-sm-10">
+                <input id="nif" class="form-control" name="nif" type="number"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="phone" class="col-sm-2 control-label">Telefone</label>
+            <div class="col-sm-10">
+                <input id="phone" class="form-control" name="phone" type="tel" placeholder="Insira o número aqui"/>
+            </div>
+        </div>
+
+        <input id="submit" class="btn btn-primary pull-right" type="submit" value="Registro"/>
+        <div class="clearfix"></div>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+<script src="./js/main.js"></script>
+</body>
+</html>
