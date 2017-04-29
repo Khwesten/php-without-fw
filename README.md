@@ -15,7 +15,7 @@ Se preferir:
 ## Execução
 
 Para execução do mesmo, é necessário:
-- Um servidor Apache;
+- Um servidor Apache (com rewrite engine on);
 - Banco de Dados MySql/Maria;
 - PHP 7+ (para construção foi usado o 7.0.13)
 
