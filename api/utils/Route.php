@@ -10,22 +10,22 @@ namespace Utils;
  */
 class Route
 {
-    public function get($route, $closure) {
+    public static function get($route, $closure) {
         global $routes;
         $routes['get'][] = ['route' => "/api".$route, 'closure' => $closure];
     }
 
-    public function post($route, $closure) {
+    public static function post($route, $closure) {
         global $routes;
         $routes['post'][] = ['route' => "/api".$route, 'closure' => $closure];
     }
 
-    public function put($route, $closure) {
+    public static function put($route, $closure) {
         global $routes;
         $routes['put'][] = ['route' => "/api".$route, 'closure' => $closure];
     }
 
-    public function delete($route, $closure) {
+    public static function delete($route, $closure) {
         global $routes;
         $routes['delete'][] = ['route' => "/api".$route, 'closure' => $closure];
     }

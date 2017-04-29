@@ -57,7 +57,7 @@ class ConnectionFactory
     }
 
     private function fillConfig() {
-        $configFile = dirname(__FILE__) . "../../config/config.ini";
+        $configFile = __DIR__ . "../../config/config.ini";
 
         if (!file_exists($configFile)) {
             throw new CustomException(500, "Create a config.ini file in '/config/'. Use '/config/model.config.ini' as parameter");

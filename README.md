@@ -6,6 +6,12 @@ No diretório 'api/' execute o comando:
 
     composer install
     
+*Checar as extensões necessárias para o PHPUnit
+    
+Se preferir:
+
+    composer install --no-dev
+    
 ## Execução
 
 Para execução do mesmo, é necessário:
